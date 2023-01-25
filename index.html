@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+  <script src="jquery-3.6.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="Mask-Plugin/src/jquery.mask.js"></script>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="center">
+      <p id="apiResult" class="sorteados"></p>
+      <p>Esses foram os numeros sorteados da mega sena</p>
+      <p>concurso: <strong id="concurso"></strong></p>
+      <p id="">Acumulou!</p>
+      <form class="form">
+        <div class="numeros">
+        </div>
+        <section class="aposta">
+          <section>
+            <button id="up">+</button>
+            <span class="nApostas">6</span>
+            <button id="down">-</button>
+          </section>    
+          <span>aposta de x numeros</span>
+        </section>
+        <button type="submit" id="compare">Comparar</button>
+        <button type="submit" id="salvar">Salvar Aposta</button>
+        <button type="submit" id="carregar">Carregar</button>
+      </form>
+      
+    </div>
+</body>
+
+</html>
