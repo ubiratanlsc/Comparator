@@ -20,8 +20,8 @@ body {
   flex-direction: column;
   margin: 0 auto;
   max-width: 640px;
-  background-color: blue;
   border: 1px solid #ccc;
+  border-radius: 12px;
 }
 .sorteados {
   padding:1em;
@@ -44,7 +44,6 @@ form {
   border-radius: 10px;
 }
 .numeros {
-  background-color:red;
   display:flex;
   justify-content: space-between;
 }

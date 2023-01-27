@@ -23,12 +23,16 @@ async function base() {
     }
   }
   function hello(bool, n) {
-    const number = document.querySelector(".numeros")
+    const div = document.querySelector(".numeros")
     const input = document.createElement('input')
-    number.appendChild(input)
-    input.className = "inputs"
+    const col = document.createElement('div')
+    div.appendChild(col)
+    col.appendChild(input)
+    // col.append(input)
+    col.className = "col-md-1"
+    input.className = "inputs form-control form-control-sm"
     input.id = `inp${n}`
-    input.setAttribute("type", "number")
+    input.setAttribute("type", "text")
     input.min = "1"
     input.max = 60
     input.placeholder = "00"
@@ -107,4 +111,9 @@ async function base() {
       console.log(localStorage.getItem(`inp${b}`));    
     }
   })
+  function msg ( ) {
+    if ( acertados.length == 6 ) {
+      "insetir mensagem"
+    }
+  }
 } base()
