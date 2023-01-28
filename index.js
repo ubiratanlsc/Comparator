@@ -3,17 +3,21 @@ const array = []
 async function base() {
   const acertados = []
   const jogados = [];
-
+  const ordenados = [];
   const instance = await axios.get(url)
     .then(response => {
       const data = response.data
-      console.log(data);
-      apiResult.textContent = data.dezenasSorteadasOrdemSorteio
+      console.log(data.dezenasSorteadasOrdemSorteio);
+      apiResult.textContent = data.dezenasSorteadasOrdemSorteio.sort()
       concurso.textContent = data.numero
       return data
     })
     .catch(error => console.error(error))
-
+  for (let z = 0; z < instance.length; z++) {
+    const element = array[z];
+    
+  }
+    
   for (let i = 1; i <= 15; i++) {
     if (i <= 6) {
       hello(false, i)

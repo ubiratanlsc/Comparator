@@ -11,8 +11,12 @@ body{
 } */
 body {
   font-family: 'SansaPro';
-  background-color: #333;
+  background-color: #21222c;
   color: #fff;
+}
+figure{
+  background-color: red;
+  margin-top:1em;
 }
 .center {
   display: flex;
