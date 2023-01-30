@@ -15,8 +15,10 @@ body {
   color: #fff;
 }
 figure{
-  background-color: red;
-  margin-top:1em;
+width: 908px;
+height: 122px;
+background: #541BA8;
+border-radius: 6px;
 }
 .center {
   display: flex;
@@ -51,37 +53,28 @@ form {
   display:flex;
   justify-content: space-between;
 }
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+input[type="text"]::-webkit-outer-spin-button,
+input[type="text"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     
 }
-input[type="number"] {
+input[type="text"] {
   text-align: center;
+  width: 132.45px;
+height: 42px;
+background: #541BA8;
+border-radius: 7px;
+color: #C3C3C3;
+font-size: 24px;
+/* font-family: 'Inter'; */
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.35);
 }
-input[type="button"] {
-  width:300px;
-  height:500px;
-  margin-right:20px;
-}
-input[type="number"] {
-  width: 10%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  background-color: #333;
-  color: #fff;
-  border-radius: 10px;
-}
-input[type="submit"] {
-  width: 100%;
-  background-color: #555;
-  color: #fff;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+button {
+width: 65px;
+height: 40px;
+border-radius:7px;
 }
