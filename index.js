@@ -27,14 +27,14 @@ async function base() {
     }
   }
   function hello(bool, n) {
-    const div = document.querySelector(".numeros")
+    const number = document.querySelector(".numeros")
     const input = document.createElement('input')
     const col = document.createElement('div')
-    div.appendChild(col)
-    col.appendChild(input)
+    number.appendChild(input)
+    // col.appendChild(input)
     // col.append(input)
     col.className = "col-md-1"
-    input.className = "inputs form-control form-control-sm"
+    input.className = "inputs"
     input.id = `inp${n}`
     input.setAttribute("type", "text")
     input.min = "1"

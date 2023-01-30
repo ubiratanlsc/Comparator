@@ -14,8 +14,11 @@ body {
   background-color: #21222c;
   color: #fff;
 }
+.container{
+  width: 908px;
+  margin: 114px auto;
+}
 figure{
-width: 908px;
 height: 122px;
 background: #541BA8;
 border-radius: 6px;
@@ -33,15 +36,18 @@ border-radius: 6px;
 button {
   background: #541BA8;
   color: #C3C3C3;
-  width: 65px;
+  width: 64px;
   height: 40px;
   border: 0px;
   border-radius:7px;
-  margin: 24px 5px 24px 0;
+  margin: 24px 0;
 }
+
 .numeros {
   display:flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-content: flex-start;
 }
 input[type="text"]::-webkit-outer-spin-button,
 input[type="text"]::-webkit-inner-spin-button {
@@ -50,12 +56,14 @@ input[type="text"]::-webkit-inner-spin-button {
 }
 input[type="text"] {
   text-align: center;
-  width: 134px;
+  flex-grow: 1;
+  flex-basis: auto;
+	width: 60px;
   height: 44px;
   background: #541BA8;
   border-radius: 7px;
   color: #C3C3C3;
-  font-size: 24px;
+  /* font-size: 24px; */
 /* font-family: 'Inter'; */
   font-style: normal;
   font-weight: 400;
