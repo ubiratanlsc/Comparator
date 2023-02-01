@@ -46,7 +46,7 @@ button {
 .numeros {
   display:flex;
   flex-wrap: wrap;
-    justify-content: space-between;
+  /* justify-content: space-between; */
 }
 input[type="text"]::-webkit-outer-spin-button,
 input[type="text"]::-webkit-inner-spin-button {
@@ -55,10 +55,11 @@ input[type="text"]::-webkit-inner-spin-button {
 }
 input[type="text"] {
   text-align: center;
-  /* margin-right: 4px; */
-  /* flex-grow: 1; */
-  flex-basis: auto;
-	/* width: 50px; */
+  /* margin: 4px; */
+  flex-grow: 1;
+  flex-basis: 20px;
+  flex-shrink: 3;
+	width: 15%;
   height: 44px;
   background: #541BA8;
   border-radius: 7px;
